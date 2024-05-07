@@ -1,5 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Script that parses and sorts IP addresses and HTTP status codes
+# Apache log file
+logfile="apache-access.log"
 
-awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
+# Check if the log file exists
+if [ ! -f "$logfile" ]; then
+    echo "File $logfile not found!"
+    exit 1
+fi
+
+# Use awk to parse the log file and sort the results
+awk '{print $1, $9}' $logfile | sort | uniq -c | sort -nr
