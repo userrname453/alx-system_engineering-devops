@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script saying "Best School" and "HI"
 
-counter=1
+counter=0
 
 while [ $counter -lt 10 ]
 do
