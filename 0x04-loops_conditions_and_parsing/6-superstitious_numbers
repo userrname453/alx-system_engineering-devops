@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
-counter=1
-while [ $counter -lt 21 ]
+#script to use while 
+
+count=1
+while [ $count -le 20 ]
 do
-	echo "$counter"
-	case "$counter" in
-		4)
-			echo "bad luck from China"
-			;;
-		9)
-			echo "bad luck from Japan"
-			;;
-		17)
-			echo "bad luck from Italy"
-			;;
-	esac
-	let counter++
+        echo "$count"
+        case $count in
+                "4") echo "bad luck from China";;
+                "9") echo "bad luck from Japan";;
+                "17") echo "bad luck from Italy";;
+        esac
+        (( count++ ))
 done
