@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script to pasrse apache log files displayin ip and http status
+
+awk '{print $1 " " $9}' apache-access.log
