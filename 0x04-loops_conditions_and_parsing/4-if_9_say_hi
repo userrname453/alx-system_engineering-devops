@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# scrip saying best schoole and hi
+counter=1
+while [ $counter -lt 10 ]
+do
+	echo "Best School"
+	if [[ "$counter" == '9' ]]
+		then
+		echo "HI"
+		fi
+	((counter++))
+done
