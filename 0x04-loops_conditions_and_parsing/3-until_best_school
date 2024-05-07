@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This is a script that is now using until
 
-count = 0
-until [ $count -eq 10 ]
+count=0
+until [ $count == 10 ]
 do
 	echo "Best School"
 	(( count++ ))
