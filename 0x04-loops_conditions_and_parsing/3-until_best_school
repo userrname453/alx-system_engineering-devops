@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# now using until
+# This is a script that is now using until
 
 count = 0
-
 until [ $count -eq 10 ]
 do
 	echo "Best School"
