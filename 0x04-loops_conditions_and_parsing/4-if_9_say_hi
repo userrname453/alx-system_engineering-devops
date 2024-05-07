@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# scrip saying best schoole and hi
+# Script saying "Best School" and "HI"
 
 counter=1
 while [ $counter -lt 10 ]
 do
-	echo "Best School"
-	if [[ "$counter" == '9' ]]
-	then
-		echo "HI"
-	fi
-	((counter++))
+        echo "Best School"
+        if [[ "$counter" -eq 9 ]]
+        then
+                echo "HI"
+        fi
+        ((counter++))
 done
