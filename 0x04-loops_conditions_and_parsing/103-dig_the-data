@@ -2,4 +2,4 @@
 
 # Script that parses and sorts IP addresses and HTTP status codes
 
-awk -F ' ' '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
+awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
