@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# display passwd using ifs and interpolation
+while IFS=':' read -r username password uid info home shell; do
+	echo "The user $username is part of the $gid gang,"\
+	"lives in $home and rides $shell."\
+	"$uid's place is protected by the passcode $password, "\
+	"more info about the user here: $info"
+done < "etc/passwd"
