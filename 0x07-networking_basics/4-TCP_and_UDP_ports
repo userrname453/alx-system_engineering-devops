@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script uses the netstat command to display a list of all listening network connections and their associated processes.
+
+netstat -lp
