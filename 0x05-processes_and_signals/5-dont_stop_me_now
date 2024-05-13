@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# Don't stop me now
-
+# Find and terminate processes matching the pattern "4-to_infinity_and_beyond"
 pgrep -f 4-to_infinity_and_beyond | xargs kill

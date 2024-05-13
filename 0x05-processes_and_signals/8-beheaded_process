@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Beheaded process
+# Use pgrep to find the process IDs of processes matching the pattern "7-highlander"
+# Then use xargs to pass these IDs to the kill command with signal -9 (SIGKILL)
 
 pgrep -f 7-highlander | xargs kill -9

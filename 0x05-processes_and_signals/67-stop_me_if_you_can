@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Stop me if you can
+# Use pkill to send a signal to processes whose names match the pattern "7-highlander"
 
 pkill -f 7-highlander
