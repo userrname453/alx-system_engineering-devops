@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# my pid
+# Script to get the process ID of a background sleep command
+
+# Run sleep command in the background and print its process ID
+
 
 sleep 5 &
 echo "$!"
